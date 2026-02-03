@@ -253,3 +253,17 @@ input:focus{border-color: rgba(122,20,255,.6)}
   cursor:pointer;
 }
 .auth-card .link:hover{text-decoration:underline}
+/* ===== Mobile fix (anti-encolher) ===== */
+html, body { width: 100%; overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; }
+
+.container { width: 100%; }
+
+@media (max-width: 640px){
+  .topbar { padding: 12px 12px; }
+  .searchwrap { display: none; } /* some com a busca grande no mobile */
+  .grid { grid-template-columns: 1fr; }
+  .card { padding: 14px; }
+  .pillbtn { padding: 0 12px; }
+}
+
